@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Application</title>
+</head>
+<body>
+  Node.js, Express et MongoDB.
+
+  <ul class="adresse">
+  
+    <li class="client"><form action="/update" method="POST">
+      <input type="text" name="nom" value="<%= adresse[id].nom %>">
+      <input type="text" name="telephone" value="<%= adresse[id].telephone %>">
+      <input type="text" name="ville" value="<%= adresse[id].ville %>">
+      <input type="text" name="code" value="<%= adresse[id].code %>">
+      <input type="hidden" name="_id" value="<%= adresse[id]._id %>">
+      <button type="submit">Update</button></form>
+    </li>
+    
+  </form>
+  </ul>
+  <script type="text/javascript" src="modifier_adresse.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Application</title>
+</head>
+<body>
+  Node.js, Express et MongoDB.
+
+  <ul class="adresse">
+  
+    <li class="client"><form action="/delete" method="POST">
+      <span><%= adresse[0].nom %></span>
+      <span><%= adresse[0].telephone %></span>
+      <span><%= adresse[0].telephone %></span>
+      <span><%= adresse[0].ville %></span>
+      <span><%= adresse[0].code %></span>
+      <input type="hidden" name="_id" value="<%= adresse[0]._id %>">
+      <button type="submit">Delete</button></form>
+      <form action="/formulaire" method="POST"><button type="submit">Update</button></form>
+    </li>
+    
+    
+  <button type="submit">Confirm</button>
+  </form>
+  </ul>
+  <script type="text/javascript" src="modifier_adresse.js"></script>
+
+</body>
+</html>
